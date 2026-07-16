@@ -35,7 +35,7 @@ const HotCollections = () => {
   React.useEffect(() => {
     axios.get("https://us-central1-nft-cloud-functions.cloudfunctions.net/hotCollections")
       .then((response) => {
-         console.log(response.data);
+         
         setCollections(response.data);
       })
       .catch((error) => {
